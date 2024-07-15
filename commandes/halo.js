@@ -133,3 +133,45 @@ zokou(
         }
     }
 );
+
+zokou(
+    {
+        nomCom: 'pvp1',
+        categorie: 'HALO INFINITE'
+    },
+    async (dest, zk, commandeOptions) => {
+        const { repondre, arg, ms } = commandeOptions;
+
+        if (!arg || arg.length === 0)  {
+            const lien = ' ';
+            const msg = `*⭕Halo Infinite PvP⭕*       
+░░░░░░░░░░░░░░░░░░░
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+🔻   *Joueur*: ⤵️
+✴:050% 
+❤️:100%            
+                                   ~  *🆚*  ~
+🔻  *Joueur*:⤵️
+✴:050% 
+❤️:100%.                            
+ ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+* *🗾𝐀𝐫𝐞̀𝐧𝐞*: 
+* *✴𝐇𝐚𝐧𝐝𝐢𝐜𝐚𝐩𝐞*: Booste On 
+* *🏞️ 𝐀𝐢𝐫 𝐝𝐞 𝐜𝐨𝐦𝐛𝐚𝐭*: 30m max
+* *↔️𝐃𝐢𝐬𝐭𝐚𝐧𝐜𝐞 𝐢𝐧𝐢𝐭𝐢𝐚𝐥𝐞*: 5m
+* *⏰𝐋𝐚𝐭𝐞𝐧𝐜𝐞*: 6mins+ 1⚠️
+ ░░░░░░░░░░░░░░░░░░░
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+🆚 *CONDITIONS DE VICTOIRES*:
+* ▪Easy,Negs diff✅: 2️⃣-0️⃣, - 090%❤️
+* ▪ Mid Diff✅: 1️⃣-0️⃣, - 050%❤️
+* ▪High Extreme Diff✅: 2️⃣-1️⃣, - 025%❤️
+✅ *Bon pavé*: immersion, dialogue, jeu de rôle 
+
+▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+  *⚠️Vous avez 8️⃣ tours max pour finir votre Adversaire! Sinon la victoire sera donnée par décision selon celui qui a dominer le combat où qui a été le plus à l'offensive !*`;
+            zk.sendMessage(dest, { image: { url: lien }, caption: msg }, { quoted: ms });
+   
+        }
+    }
+);
