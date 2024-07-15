@@ -51,8 +51,6 @@ zokou(
 );
 
 
-const { zokou } = require('../framework/zokou');
-
 zokou(
     {
         nomCom: 'add',
