@@ -143,7 +143,7 @@ zokou(
         const { repondre, arg, ms } = commandeOptions;
 
         if (!arg || arg.length === 0)  {
-            const lien = ' ';
+          //  const lien = ' ';
             const msg = `*⭕Halo Infinite PvP⭕*       
 ░░░░░░░░░░░░░░░░░░░
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
@@ -170,8 +170,8 @@ zokou(
 
 ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
   *⚠️Vous avez 8️⃣ tours max pour finir votre Adversaire! Sinon la victoire sera donnée par décision selon celui qui a dominer le combat où qui a été le plus à l'offensive !*`;
-            zk.sendMessage(dest, { image: { url: lien }, caption: msg }, { quoted: ms });
-   
+            //zk.sendMessage(dest, { image: { url: lien }, caption: msg }, { quoted: ms });
+   repondre(msg);
         }
     }
 );
@@ -185,7 +185,7 @@ zokou(
         const { repondre, arg, ms } = commandeOptions;
 
         if (!arg || arg.length === 0) {
-            const lien = ' ';
+          //  const lien = ' ';
             const msg = `⭕️ 𝙷𝚊𝚕𝚘 𝙸𝚗𝚏𝚒𝚗𝚒𝚝𝚎 ՏႷՏⲦᦷ̀Ⰿᦷ
 ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
 
@@ -200,7 +200,7 @@ zokou(
 
 ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
 ◈◈◈◈𝗣𝗥𝝝𝗖𝗘𝗗𝗨𝗥𝗘𝗦 ♻️◈◈◈◈`;
-            zk.sendMessage(dest, { image: { url: lien }, caption: msg }, { quoted: ms });
-        }
+            //zk.sendMessage(dest, { image: { url: lien }, caption: msg }, { quoted: ms });
+     repondre(msg);   }
     }
 );
