@@ -93,8 +93,8 @@ zokou(
 ▭▭▭▭▭▭▭▭▭▭▭▭▭▭▭▭
 ┌───❮*Mission*❯───···▸▸
 │╭────────────···▸
-* │▸  `/`/`/Mission Réussi`/`/`/ ✅ : 00
-* │▸  `/`/`/Mission Fail`/`/`/ ❌ : 00
+* │▸  \`\`\`Mission Réussi\`\`\` ✅ : 00
+* │▸  \`\`\`Mission Fail\`\`\` ❌ : 00
 │╰───────────···▸▸
 └────────────···▸
 
@@ -104,6 +104,32 @@ zokou(
 ░░░░░░░░░░░░░░░░░`;
             zk.sendMessage(dest, { image: { url: lien }, caption: msg }, { quoted: ms });
    
+        }
+    }
+);
+
+zokou(
+    {
+        nomCom: 'pave',
+        categorie: 'HALO INFINITE'
+    },
+    async (dest, zk, commandeOptions) => {
+        const { repondre, arg, ms } = commandeOptions;
+
+        if (!arg || arg.length === 0)  {
+           // const lien = '';
+            const msg = `╭━⭕️𝐇𝐚𝐥𝐨 𝐈𝐧𝐟𝐢𝐧𝐢𝐭𝐞🧩━╮
+
+* ↔️𝐃𝐢𝐬𝐭𝐚𝐧𝐜𝐞 : 5m
+
+* 💬𝐂𝐡𝐚𝐭 : 
+
+> ℹ️
+> ℹ️
+
+╰━━━━━━𝐇𝐚𝐥𝐨━━━━━╯`;
+            //zk.sendMessage(dest, { image: { url: lien }, caption: msg }, { quoted: ms });
+    repondre(msg);
         }
     }
 );
