@@ -346,7 +346,7 @@ zokou(
 ║ 𝚮𝚫𝐋𝚯 𝚰𝚴𝐅𝚰𝚴𝚰𝚻𝚵║
 ╚════◇◇◇═════╝`;
             /*zk.sendMessage(dest, { image: { url: lien }, caption: msg }, { quoted: ms });*/
-repondre (msg) ;
+repondre(msg) ;
         }
     }
 );
