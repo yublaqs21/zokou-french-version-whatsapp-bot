@@ -52,39 +52,6 @@ zokou(
 
 zokou(
     {
-        nomCom: 'transaction',
-        categorie: 'HALO INFINITE'
-    },
-    async (dest, zk, commandeOptions) => {
-        const { repondre, arg, ms } = commandeOptions;
-
-        if (!arg || arg.length === 0)  {
-            const lien = ' ';
-            const msg = `╔═════◇
-║    『𝑇𝒓𝒂𝒏𝒔𝒂𝒄𝒕𝒊𝒐𝒏』
-║
-║ Nom de l'article 
-║ *>* :
-║
-║ Prix de l'article
-║ *>* :
-║
-║ Crédit[©] donné
-║ *>* :
-╚══════════════════╝
-  
-╔═════◇
-║ Acheteur 
-║ *>*:
-╚══════════════════╝`;
-            /*zk.sendMessage(dest, { image: { url: lien }, caption: msg }, { quoted: ms });*/
-repondre(msg) ;
-        }
-    }
-);
-
-zokou(
-    {
         nomCom: 'pave',
         categorie: 'HALO INFINITE'
     },
@@ -310,6 +277,39 @@ zokou(
 ╔════◇◇◇═════╗
 ║ 𝚮𝚫𝐋𝚯 𝚰𝚴𝐅𝚰𝚴𝚰𝚻𝚵║
 ╚════◇◇◇═════╝`;
+            /*zk.sendMessage(dest, { image: { url: lien }, caption: msg }, { quoted: ms });*/
+repondre(msg) ;
+        }
+    }
+);
+
+zokou(
+    {
+        nomCom: 'transaction',
+        categorie: 'HALO INFINITE'
+    },
+    async (dest, zk, commandeOptions) => {
+        const { repondre, arg, ms } = commandeOptions;
+
+        if (!arg || arg.length === 0)  {
+            const lien = ' ';
+            const msg = `╔═════◇
+║    『𝑇𝒓𝒂𝒏𝒔𝒂𝒄𝒕𝒊𝒐𝒏』
+║
+║ Nom de l'article 
+║ *>* :
+║
+║ Prix de l'article
+║ *>* :
+║
+║ Crédit[©] donné
+║ *>* :
+╚══════════════════╝
+  
+╔═════◇
+║ Acheteur 
+║ *>*:
+╚══════════════════╝`;
             /*zk.sendMessage(dest, { image: { url: lien }, caption: msg }, { quoted: ms });*/
 repondre(msg) ;
         }
