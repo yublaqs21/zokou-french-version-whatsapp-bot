@@ -299,3 +299,52 @@ repondre(msg) ;
         }
     }
 );
+
+zokou(
+    {
+        nomCom: 'akito',
+        categorie: 'HALO INFINITE'
+    },
+    async (dest, zk, commandeOptions) => {
+        const { repondre, arg, ms } = commandeOptions;
+
+        if (!arg || arg.length === 0)  {
+            const lien = ' ';
+            const msg = `╔═══════◇
+║ 『 *Akito* 』
+║    
+║ *>* \`Rang\`™        :Novice
+║ *>* \`Âge\`™           :12an
+║ *>* \`Taille\`™    :1m25
+║ *>* \`Genre\`™      :Féminine
+║ *>* \`Crédit\`™    :200© 
+╚══════════════════╝
+
+╔═════◇
+║   『 *State* 』
+║
+║ *>* \`Vitesse\`™       :30/∞
+║ *>* \`Force\`™            :30/∞
+║ *>* \`Précision\`™  :30/∞
+║ *>* \`Endurance\`™  :30/∞
+║ *>* \`Niveau\`™         :30/200 ¶
+║ 
+╚══════════════════╝
+  
+╔═════◇
+║『 *Équipements* 』
+║
+║ *>* 
+║ *>* 
+║ 
+╚══════════════════╝
+
+*_Updated_* : 24-07-2024
+╔════◇◇◇═════╗
+║ 𝚮𝚫𝐋𝚯 𝚰𝚴𝐅𝚰𝚴𝚰𝚻𝚵║
+╚════◇◇◇═════╝`;
+            /*zk.sendMessage(dest, { image: { url: lien }, caption: msg }, { quoted: ms });*/
+repondre(msg) ;
+        }
+    }
+);
