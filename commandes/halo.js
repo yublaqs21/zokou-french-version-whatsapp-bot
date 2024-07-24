@@ -204,3 +204,51 @@ zokou(
      repondre(msg);   }
     }
 );
+
+zokou(
+    {
+        nomCom: 'tempest',
+        categorie: 'HALO INFINITE'
+    },
+    async (dest, zk, commandeOptions) => {
+        const { repondre, arg, ms } = commandeOptions;
+
+        if (!arg || arg.length === 0)  {
+            const lien = ' ';
+            const msg = `╔═══════◇
+║ 『 *TEMPEST* 』
+║    
+║ *>* \`Rang\`™        :Novice
+║ *>* \`Âge\`™           :12an
+║ *>* \`Taille\`™    :1m20
+║ *>* \`Genre\`™      :Masculin
+║ *>* \`Crédit\`™    :2200© 
+╚══════════════════╝
+
+╔═════◇
+║   『 *State* 』
+║
+║ *>* \`Vitesse\`™       :34/∞
+║ *>* \`Force\`™            :33/∞
+║ *>* \`Précision\`™  :35/∞
+║ *>* \`Endurance\`™  :33/∞
+║ *>* \`Niveau\`™         :60/200 ¶
+║ 
+╚══════════════════╝
+  
+╔═════◇
+║『 *Équipements* 』
+║
+║ *>* 
+║ *>* 
+║ 
+╚══════════════════╝
+
+*_Updated_* : 27-07-2024
+╔════◇◇◇═════╗
+║ 𝚮𝚫𝐋𝚯 𝚰𝚴𝐅𝚰𝚴𝚰𝚻𝚵║
+╚════◇◇◇═════╝`;
+            zk.sendMessage(dest, { image: { url: lien }, caption: msg }, { quoted: ms });
+        }
+    }
+);
