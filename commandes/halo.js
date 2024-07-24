@@ -52,22 +52,6 @@ zokou(
 
 zokou(
     {
-        nomCom: 'pave',
-        categorie: 'HALO INFINITE'
-    },
-    async (dest, zk, commandeOptions) => {
-        const { repondre, arg, ms } = commandeOptions;
-
-        if (!arg || arg.length === 0)  {
-           // const lien = '';
-            const msg = `╭━⭕️𝐇𝐚𝐥𝐨 𝐈𝐧𝐟𝐢𝐧𝐢aption: msg }, { quoted: ms });
-    repondre(msg);
-        }
-    }
-);
-
-zokou(
-    {
         nomCom: 'pvp1',
         categorie: 'HALO INFINITE'
     },
