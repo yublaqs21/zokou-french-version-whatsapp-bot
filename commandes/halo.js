@@ -545,3 +545,47 @@ repondre(msg) ;
         }
     }
 );
+
+zokou(
+    {
+        nomCom: 'article',
+        categorie: 'HALO INFINITE'
+    },
+    async (dest, zk, commandeOptions) => {
+        const { repondre, arg, ms } = commandeOptions;
+
+        if (!arg || arg.length === 0)  {
+            const lien = ' ';
+            const msg = `╔═════◇◇◇══════╗
+║              Article               ║
+╚═════◇◇◇══════╝
+
+*Section 1* 💢
+
+📦-Couteau à crochet Crisis GERBER
+* *>* 400©
+
+📦-Couteau Covert Double Bevel Acier GERBER
+* *>* 400©
+
+📦-Couteau de cou Ka-Bar Snake Charmer lame 5.9cm Lisse Satin manche Inox - 5103
+* *>* 450©
+
+📦-Couteau Edict Lockback GERBER
+* *>* 450©
+
+📦-Couteau Ka-Bar Acheron lame 7.9cm Lisse Noir manche Inox - 5699BP
+* *>* 500©
+
+📦-Couteau Ka-Bar Hell Fire lame 9cm Lisse Noir manche Polymère - 2486
+* *>* 600©
+
+📦-Katana a lame violet de 1m 
+* *>* 1,400©
+
+*Section 2* ♻️`;
+            /*zk.sendMessage(dest, { image: { url: lien }, caption: msg }, { quoted: ms });*/
+repondre(msg) ;
+        }
+    }
+);
