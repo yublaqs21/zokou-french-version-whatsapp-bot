@@ -638,3 +638,52 @@ repondre(msg) ;
         }
     }
 );
+
+zokou(
+    {
+        nomCom: 'tristan',
+        categorie: 'HALO INFINITE'
+    },
+    async (dest, zk, commandeOptions) => {
+        const { repondre, arg, ms } = commandeOptions;
+
+        if (!arg || arg.length === 0)  {
+            const lien = ' ';
+            const msg = `╔═══════◇
+║ 『 *Tristan* 』
+║    
+║ *>* \`Rang\`™        : Novice
+║ *>* \`Âge\`™           : 10 ans
+║ *>* \`Taille\`™    : 1m18
+║ *>* \`Genre\`™      : Masculin
+║ *>* \`Crédit\`™    : 200© 
+╚══════════════════╝
+
+╔═════◇
+║   『 *State* 』
+║
+║ *>* \`Vitesse\`™       : 30/∞
+║ *>* \`Force\`™            : 30/∞
+║ *>* \`Précision\`™  : 30/∞
+║ *>* \`Endurance\`™  : 30/∞
+║ *>* \`Niveau\`™         : 30/200 ¶
+║ 
+╚══════════════════╝
+  
+╔═════◇
+║『 *Équipements* 』
+║
+║ *>* 
+║ *>* 
+║ 
+╚══════════════════╝
+
+*_Updated_* : 27-07-2024
+╔════◇◇◇═════╗
+║ 𝚮𝚫𝐋𝚯 𝚰𝚴𝐅𝚰𝚴𝚰𝚻𝚵║
+╚════◇◇◇═════╝`;
+            /*zk.sendMessage(dest, { image: { url: lien }, caption: msg }, { quoted: ms });*/
+repondre(msg) ;
+        }
+    }
+);
