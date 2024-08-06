@@ -221,55 +221,6 @@ repondre(msg) ;
 
 zokou(
     {
-        nomCom: 'shinya',
-        categorie: 'HALO INFINITE'
-    },
-    async (dest, zk, commandeOptions) => {
-        const { repondre, arg, ms } = commandeOptions;
-
-        if (!arg || arg.length === 0)  {
-            const lien = ' ';
-            const msg = `╔═══════◇
-║ 『 *Shinya Hiragi* 』
-║    
-║ *>* \`Rang\`™        :Novice
-║ *>* \`Âge\`™           :12an
-║ *>* \`Taille\`™    :1m25
-║ *>* \`Genre\`™      :Masculin
-║ *>* \`Crédit\`™    :1200© 
-╚══════════════════╝
-
-╔═════◇
-║   『 *State* 』
-║
-║ *>* \`Vitesse\`™       :32/∞
-║ *>* \`Force\`™            :32/∞
-║ *>* \`Précision\`™  :30/∞
-║ *>* \`Endurance\`™  :31/∞
-║ *>* \`Niveau\`™         :50/200 ¶
-║ 
-╚══════════════════╝
-  
-╔═════◇
-║『 *Équipements* 』
-║
-║ *>* 
-║ *>* 
-║ 
-╚══════════════════╝
-
-*_Updated_* : 24-07-2024
-╔════◇◇◇═════╗
-║ 𝚮𝚫𝐋𝚯 𝚰𝚴𝐅𝚰𝚴𝚰𝚻𝚵║
-╚════◇◇◇═════╝`;
-            /*zk.sendMessage(dest, { image: { url: lien }, caption: msg }, { quoted: ms });*/
-repondre(msg) ;
-        }
-    }
-);
-
-zokou(
-    {
         nomCom: 'transaction',
         categorie: 'HALO INFINITE'
     },
